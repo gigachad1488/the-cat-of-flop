@@ -110,7 +110,7 @@ public class Floppy
 
         Canvas.SetBottom(collider, currentPositionY);
 
-        if (currentPositionY < -2|| currentPositionY > canvas.Bounds.Height - 40)
+        if (currentPositionY < -2|| currentPositionY > canvas.Bounds.Height - 15)
         {
             StaticData.floppy.collider.Fill = new SolidColorBrush(Colors.Red);
             UpdateHandler.updateEvent -= Update;

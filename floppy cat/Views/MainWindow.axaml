@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:floppy_cat.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+        WindowStartupLocation="CenterScreen"
+        SystemDecorations="None"
+        Width="800"
+        Height="400"
+        x:Class="floppy_cat.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="floppy_cat">
+
+    <Window.Styles>
+      
+        <Style Selector="Canvas">
+
+			
+			
+        </Style>
+        <Style Selector="Rectangle.flop">
+            <Setter Property="Fill">
+                <Setter.Value>
+                        <ImageBrush Stretch="Uniform" Source="/Assets/flop.png"></ImageBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Styles>
+    
+
+    <Grid RowDefinitions="Auto, *">
+        <Grid Grid.Row="0" Background="Brown" ColumnDefinitions="*, *, *" Height="40">
+            <Grid Grid.Column="0" ColumnDefinitions="*, *">
+                <TextBlock Grid.Column="0" VerticalAlignment="Center">очки: </TextBlock>
+                <TextBlock Grid.Column="1" x:Name="countText" VerticalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Column="1" x:Name="flopname" VerticalAlignment="Center" Margin="20, 0, 0, 0"></TextBlock>
+            </Grid>
+        </Grid>
+
+        <Canvas Grid.Row="1"  x:Name="Canvas"  >    
+    </Canvas>
+
+    </Grid>
+
+</Window>

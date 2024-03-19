@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="floppy cat/Views/EndScreen.axaml" value="floppy cat/floppy cat.csproj" />
+        <entry key="floppy cat/Views/MainMenu.axaml" value="floppy cat/floppy cat.csproj" />
+        <entry key="floppy cat/Views/MainWindow.axaml" value="floppy cat/floppy cat.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="floppy_cat.Views.MainMenu"
+		MinHeight="400"
+		WindowStartupLocation="CenterScreen"
+		WindowState="Normal"
+		MinWidth="620"
+		MaxHeight="800"
+		MaxWidth="1600"
+        Title="MainMenu">
+        <Grid ColumnDefinitions="0.8*, *">
+			<Grid RowDefinitions="0.7*, *" Grid.Column="0">
+                <Button Grid.Row="0" CornerRadius="30" Background="GreenYellow" x:Name="playButton" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="40, 0, 0, 0" Width="300" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Content="обычный" Height="100"/>
+				<Button Grid.Row="1" CornerRadius="30" Background="Red" x:Name="playHardButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40, 0, 0, 0" Width="300" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Content="сложный" Height="100"/>
+				<Button Grid.Row="1" CornerRadius="30" Background="BlanchedAlmond" x:Name="exitButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="60, 0, 0, 40" Width="260" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Content="выход" Height="80"/>
+			</Grid>
+			<Grid Grid.Column="1" RowDefinitions="Auto, *">
+				<TextBlock Margin="0, 30, 0, 0" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" VerticalAlignment="Center">попытки</TextBlock>
+				<ListBox Background="Transparent" MinWidth="200" x:Name="resBox" Grid.Row="1" HorizontalAlignment="Center"></ListBox>
+			</Grid>
+        </Grid>
+</Window>
